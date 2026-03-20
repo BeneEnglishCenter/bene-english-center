@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bene English Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <a href="index.html">Bene English Center</a>
+            </h1>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">トップページ</a></li>
+                    <li><a href="center.html">センター案内</a></li>
+                    <li><a href="#">クラス案内</a></li>
+                    <li><a href="#">年間スケジュール</a></li>
+                    <li><a href="#">海外留学</a></li>
+                    <li><a href="#">イングリッシュキャンプ</a></li>
+                    <li><a href="#">英検</a></li>
+                    <li><a href="#">アクセス</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ===== スライダー ===== -->
+    <section class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <!-- center center: 建物と庭全体がバランスよく収まる -->
+                <img src="image/toppage/Toppage_1.jpeg" alt="Bene English Center 外観" style="object-position: center center;">
+            </div>
+            <div class="slide">
+                <!-- center 30%: 授業中の生徒の顔〜手元が見えるよう少し上寄り -->
+                <img src="image/toppage/Toppage_2.jpeg" alt="授業風景" style="object-position: center 30%;">
+            </div>
+            <div class="slide">
+                <!-- center top: クリスマス発表、子どもたちの顔をしっかり見せる -->
+                <img src="image/toppage/Toppage_3.jpeg" alt="クリスマスイベント" style="object-position: center 40%;">
+            </div>
+            <div class="slide">
+                <!-- center 40%: 芝生でくつろぐ子どもたち、表情と背景のBENE看板を両立 -->
+                <img src="image/toppage/Toppage_4.jpeg" alt="芝生の子どもたち" style="object-position: center 65%;">
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+        </div>
+    </section>
+
+    <!-- ===== メインコンテンツ ===== -->
+    <main class="main-content">
+
+        <!-- 見出し -->
+        <section class="section-headline">
+            <h2 class="headline-ja">20年以上英語教育一筋</h2>
+            <p class="headline-en">Over 20 years of commitment to English Education</p>
+        </section>
+
+        <!-- 本文 -->
+        <section class="section-body">
+            <p class="body-ja">幼児から海外留学を目指す大学生まで、一人ひとりに合わせた指導で「わかる・話せる・使える」英語力を育てます。</p>
+            <p class="body-en">Supporting learners from young children to university students preparing for overseas studies, nurturing the ability to understand, speak, and use English.</p>
+        </section>
+
+        <!-- 締め台詞 -->
+        <section class="section-cta">
+            <p class="cta-ja">まずは無料体験レッスンへ</p>
+            <p class="cta-en">Start with a Free Trial Lesson</p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <p>〒838-0816 福岡県朝倉郡筑前町新町232-2 セラフィンホール</p>
+                <p>TEL: 0946-21-1675</p>
+                <p>受付時間: 平日 13:00〜20:00</p>
+                <p class="copyright">
+                    © 2026 Bene English Center All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
