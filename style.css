@@ -342,19 +342,6 @@ footer {
   opacity: 0.9;
 }
 
-.footer-mail {
-  color: #A8D5B5;
-  text-decoration: none;
-  font-size: clamp(10px, 2.8vw, 13px);
-  letter-spacing: 0.04em;
-  transition: opacity 0.2s;
-}
-
-.footer-mail:hover {
-  opacity: 0.75;
-  text-decoration: underline;
-}
-
 .copyright {
   margin-top: 14px !important;
   font-size: clamp(9px, 2.2vw, 11px) !important;
@@ -732,4 +719,308 @@ footer {
 .scroll-top:hover {
   background: #176E42;
   transform: translateY(-3px);
+}
+
+/* ===== フッターメールリンク ===== */
+.footer-mail {
+  color: #A8D5B5;
+  text-decoration: none;
+  font-size: clamp(10px, 2.8vw, 13px);
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s;
+}
+
+.footer-mail:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+/* ===== 年間スケジュールページ ===== */
+
+/* 学期カード */
+.section-term {
+  background: #F5F8F6;
+  padding: 32px 24px 48px;
+}
+
+.term-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .section-term {
+    padding: 48px 40px 64px;
+  }
+  .term-wrapper {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.term-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  flex: 1;
+  border-top: 5px solid #0E3F2B;
+  text-align: center;
+}
+
+.term-badge {
+  display: inline-block;
+  background: #0E3F2B;
+  color: #fff;
+  font-size: clamp(13px, 3vw, 15px);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 4px 16px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.term-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.term-start,
+.term-end {
+  font-size: clamp(16px, 4vw, 20px);
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.term-arrow {
+  font-size: clamp(14px, 3vw, 18px);
+  color: #999;
+}
+
+.term-day {
+  font-size: 0.75em;
+  font-weight: 400;
+  color: #555;
+}
+
+.term-day.sat { color: #1a6bbf; }
+.term-day.sun { color: #c0392b; }
+
+.term-label {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(12px, 2.5vw, 14px);
+  color: #888;
+  margin: 0;
+  letter-spacing: 0.06em;
+}
+
+/* タイムライン */
+.section-timeline {
+  background: #fff;
+  padding: 32px 24px 48px;
+}
+
+.timeline-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: #D8E5DE;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -28px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #0E3F2B;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #0E3F2B;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  background: #F5F8F6;
+  border-radius: 8px;
+  padding: 12px 16px;
+  flex: 1;
+}
+
+.timeline-date {
+  font-size: clamp(12px, 3vw, 14px);
+  color: #666;
+  margin: 0 0 4px;
+  font-weight: 500;
+}
+
+.timeline-event {
+  font-size: clamp(15px, 3.5vw, 17px);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+
+.tl-day { font-weight: 400; font-size: 0.9em; }
+.tl-day.sat { color: #1a6bbf; }
+.tl-day.sun { color: #c0392b; }
+
+@media (min-width: 768px) {
+  .section-timeline {
+    padding: 48px 40px 64px;
+  }
+  .timeline-wrapper {
+    max-width: 680px;
+  }
+}
+
+/* ===== 英検ページ ===== */
+.eiken-schedule-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.eiken-schedule-row:last-child {
+  border-bottom: none;
+}
+
+.eiken-label {
+  font-size: clamp(11px, 2.5vw, 13px);
+  font-weight: 700;
+  color: #0E3F2B;
+  min-width: 72px;
+  letter-spacing: 0.04em;
+}
+
+.eiken-value {
+  font-size: clamp(15px, 3.5vw, 18px);
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.eiken-day {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #555;
+}
+
+.eiken-day.sat { color: #1a6bbf; }
+
+.section-results {
+  background: #F5F8F6;
+  padding: 40px 24px 56px;
+}
+
+.results-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.results-title {
+  font-size: clamp(20px, 5vw, 28px);
+  font-weight: 700;
+  color: #0E3F2B;
+  margin: 0 0 8px;
+  letter-spacing: 0.06em;
+}
+
+.results-subtitle {
+  font-size: clamp(12px, 3vw, 14px);
+  color: #777;
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+
+.results-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.result-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-left: 5px solid #A8D5B5;
+}
+
+.result-item.result-top {
+  border-left: 5px solid #0E3F2B;
+  background: #F0F7F3;
+}
+
+.result-grade {
+  font-size: clamp(15px, 3.5vw, 18px);
+  font-weight: 700;
+  color: #0E3F2B;
+  min-width: 100px;
+  letter-spacing: 0.04em;
+}
+
+.result-count {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(28px, 7vw, 40px);
+  font-weight: 600;
+  color: #0E3F2B;
+  line-height: 1;
+  min-width: 60px;
+  text-align: center;
+}
+
+.result-unit {
+  font-size: 0.5em;
+  font-weight: 400;
+  color: #555;
+}
+
+.result-detail {
+  font-size: clamp(12px, 2.8vw, 14px);
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .section-results {
+    padding: 52px 40px 64px;
+  }
 }
