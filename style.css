@@ -257,6 +257,10 @@ body {
   text-align: center;
 }
 
+.body-bold {
+  font-weight: bold;
+}
+
 .body-ja {
   font-size: clamp(15px, 3.5vw, 18px);
   color: #222;
