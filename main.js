@@ -1,3 +1,4 @@
+// CREATE BY MAEDA
 // ===== Masonryギャラリー（PCのみ） =====
 function initMasonry() {
   const wrapper = document.querySelector(".gallery-wrapper");
