@@ -107,6 +107,64 @@ nav.addEventListener("click", (e) => {
   window.location.href = href;
 });
 
+// ===== チラシPDFモーダル（汎用・複数対応） =====
+function openModal(modalId, overlayId) {
+  const modal = document.getElementById(modalId);
+  const overlay = document.getElementById(overlayId);
+  if (!modal || !overlay) return;
+  modal.classList.add("active");
+  overlay.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal(modalId, overlayId) {
+  const modal = document.getElementById(modalId);
+  const overlay = document.getElementById(overlayId);
+  if (!modal || !overlay) return;
+  modal.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+// サマーキャンプバナー
+const flyerBannerBtn = document.getElementById("flyerBannerBtn");
+if (flyerBannerBtn) {
+  flyerBannerBtn.addEventListener("click", () => openModal("flyerModal", "flyerModalOverlay"));
+}
+
+// 海外留学バナー
+const studyBannerBtn = document.getElementById("studyBannerBtn");
+if (studyBannerBtn) {
+  studyBannerBtn.addEventListener("click", () => openModal("studyModal", "studyModalOverlay"));
+}
+
+// オーバーレイクリックで閉じる
+const flyerModalOverlay = document.getElementById("flyerModalOverlay");
+if (flyerModalOverlay) {
+  flyerModalOverlay.addEventListener("click", () => closeModal("flyerModal", "flyerModalOverlay"));
+}
+const studyModalOverlay = document.getElementById("studyModalOverlay");
+if (studyModalOverlay) {
+  studyModalOverlay.addEventListener("click", () => closeModal("studyModal", "studyModalOverlay"));
+}
+
+// ✕ボタン（data-target属性でどのモーダルか判定）
+document.querySelectorAll(".flyer-modal-close").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const targetId = btn.dataset.target;
+    const overlayId = targetId.replace("Modal", "ModalOverlay");
+    closeModal(targetId, overlayId);
+  });
+});
+
+// ESCキーで開いているモーダルをすべて閉じる
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeModal("flyerModal", "flyerModalOverlay");
+    closeModal("studyModal", "studyModalOverlay");
+  }
+});
+
 // ===== スライダー（スライダーがあるページのみ実行） =====
 const sliderEl = document.querySelector(".slider");
 if (sliderEl) {

@@ -11,8 +11,10 @@
     <meta property="og:title" content="ベネイングリッシュセンター｜筑前町の英語教室｜福岡県朝倉郡">
     <meta property="og:description" content="幼児から大学生まで20年以上の指導実績。英会話・英検対策・海外留学サポート。まずは無料体験レッスンへ。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://beneenglishcenter.github.io/bene-english-center/">
-    <link rel="canonical" href="https://beneenglishcenter.github.io/bene-english-center/">
+    <!-- <meta property="og:url" content="https://beneenglishcenter.github.io/bene-english-center/"> -->
+    <meta property="og:url" content="https://www.bene-english.com/">
+    <!-- <link rel="canonical" href="https://beneenglishcenter.github.io/bene-english-center/"> -->
+    <link rel="canonical" href="https://www.bene-english.com/">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,9 +28,9 @@
       "@type": "EducationalOrganization",
       "name": "ベネイングリッシュセンター",
       "alternateName": ["Bene English Center", "べねいんぐりっしゅせんたー", "bene english center"],
+      "url": "https://www.bene-english.com/",
+      "logo": "https://www.bene-english.com/image/toppage/Toppage_1.jpeg",
       "alternateName": "Bene English Center",
-      "url": "https://beneenglishcenter.github.io/bene-english-center/",
-      "logo": "https://beneenglishcenter.github.io/bene-english-center/image/toppage/Toppage_1.jpeg",
       "description": "福岡県朝倉郡筑前町にある英語教室。幼児から大学生まで20年以上の指導実績。英会話・英検対策・海外留学サポート。",
       "address": {
         "@type": "PostalAddress",
@@ -51,9 +53,9 @@
     <header class="header">
         <div class="container">
             <h1 class="logo">
-                <a href="index.html">Bene English Center</a>
+                <a href="/">Bene English Center</a>
             </h1>
-            <button class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" type="button" aria-label="メニューを開く">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -61,7 +63,7 @@
 
             <nav class="nav" id="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html">トップページ</a></li>
+                    <li><a href="/">トップページ</a></li>
                     <li><a href="center.html">センター案内</a></li>
                     <li><a href="class.html">クラス案内</a></li>
                     <li><a href="schedule.html">年間スケジュール</a></li>
@@ -97,11 +99,13 @@
             </div>
             <div class="slide">
                 <!-- center 40%: 芝生でくつろぐ子どもたち、表情と背景のBENE看板を両立 -->
-                <img src="image/toppage/Toppage_5.jpeg" alt="筑前町の英語教室 ベネイングリッシュセンター 勉強中" style="object-position: center 70%;">
+                <img src="image/toppage/Toppage_5.jpeg" alt="筑前町の英語教室 ベネイングリッシュセンター 勉強中"
+                    style="object-position: center 70%;">
             </div>
             <div class="slide">
                 <!-- center 40%: 芝生でくつろぐ子どもたち、表情と背景のBENE看板を両立 -->
-                <img src="image/toppage/Toppage_6.jpeg" alt="筑前町の英語教室 ベネイングリッシュセンター クラスの雰囲気" style="object-position: center 55%;">
+                <img src="image/toppage/Toppage_6.jpeg" alt="筑前町の英語教室 ベネイングリッシュセンター クラスの雰囲気"
+                    style="object-position: center 55%;">
             </div>
         </div>
         <div class="slider-dots">
@@ -113,6 +117,125 @@
             <span class="dot" data-index="5"></span>
         </div>
     </section>
+
+    <!-- ===== バナーエリア ===== -->
+    <section class="section-flyer-banner">
+
+        <!-- サマーキャンプ -->
+        <button class="flyer-banner-btn" id="flyerBannerBtn" type="button">
+            <span class="flyer-banner-icon">☀️</span>
+            <span class="flyer-banner-text">
+                <span class="flyer-banner-title">2026 サマーキャンプ案内</span>
+                <span class="flyer-banner-sub">Summer Camp Information — タップしてチラシを見る</span>
+            </span>
+            <span class="flyer-banner-arrow">▶</span>
+        </button>
+
+        <!-- 海外留学 -->
+        <button class="flyer-banner-btn flyer-banner-btn--green" id="studyBannerBtn" type="button">
+            <span class="flyer-banner-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 60" width="44" height="30" style="display:block;border-radius:3px;">
+                  <!-- 上：青 -->
+                  <rect width="90" height="30" fill="#0038A8"/>
+                  <!-- 下：赤 -->
+                  <rect y="30" width="90" height="30" fill="#CE1126"/>
+                  <!-- 左：白三角 -->
+                  <polygon points="0,0 45,30 0,60" fill="#FFFFFF"/>
+                  <!-- 太陽（黄色） -->
+                  <circle cx="18" cy="30" r="7" fill="#FCD116"/>
+                  <!-- 太陽の光8本 -->
+                  <g stroke="#FCD116" stroke-width="1.5">
+                    <line x1="18" y1="20" x2="18" y2="16"/>
+                    <line x1="18" y1="40" x2="18" y2="44"/>
+                    <line x1="8"  y1="30" x2="4"  y2="30"/>
+                    <line x1="28" y1="30" x2="32" y2="30"/>
+                    <line x1="11" y1="23" x2="8"  y2="20"/>
+                    <line x1="25" y1="37" x2="28" y2="40"/>
+                    <line x1="25" y1="23" x2="28" y2="20"/>
+                    <line x1="11" y1="37" x2="8"  y2="40"/>
+                  </g>
+                  <!-- 星3つ（各コーナー） -->
+                  <polygon points="4,5 5,8 8,8 5.5,10 6.5,13 4,11 1.5,13 2.5,10 0,8 3,8" fill="#FCD116"/>
+                  <polygon points="4,55 5,52 8,52 5.5,50 6.5,47 4,49 1.5,47 2.5,50 0,52 3,52" fill="#FCD116"/>
+                  <polygon points="38,30 39,33 42,33 39.5,35 40.5,38 38,36 35.5,38 36.5,35 34,33 37,33" fill="#FCD116"/>
+                </svg>
+            </span>
+            <span class="flyer-banner-text">
+                <span class="flyer-banner-title">2026 短期海外留学プログラム</span>
+                <span class="flyer-banner-sub">Study Abroad Program — タップしてチラシを見る</span>
+            </span>
+            <span class="flyer-banner-arrow">▶</span>
+        </button>
+
+    </section>
+
+    <!-- ===== サマーキャンプ PDFモーダル ===== -->
+    <div class="flyer-modal" id="flyerModal" role="dialog" aria-modal="true" aria-label="サマーキャンプチラシ">
+        <div class="flyer-modal-inner">
+            <div class="flyer-modal-header">
+                <p class="flyer-modal-title">☀️ 2026 サマーキャンプ案内</p>
+                <div class="flyer-modal-actions">
+                    <a href="pdf/2026%20Summer%20Camp%20omote.pdf" target="_blank" rel="noopener noreferrer" class="flyer-btn flyer-btn-open">
+                        表面 別タブで開く ↗
+                    </a>
+                    <a href="pdf/2026%20Summer%20Camp%20ura.pdf" target="_blank" rel="noopener noreferrer" class="flyer-btn flyer-btn-open">
+                        裏面 別タブで開く ↗
+                    </a>
+                    <a href="pdf/2026%20Summer%20Camp%20omote.pdf" download class="flyer-btn flyer-btn-dl">
+                        表面 DL ↓
+                    </a>
+                    <a href="pdf/2026%20Summer%20Camp%20ura.pdf" download class="flyer-btn flyer-btn-dl">
+                        裏面 DL ↓
+                    </a>
+                    <button class="flyer-modal-close" data-target="flyerModal" type="button" aria-label="閉じる">✕</button>
+                </div>
+            </div>
+            <div class="flyer-modal-body">
+                <iframe src="pdf/2026%20Summer%20Camp%20omote.pdf" title="サマーキャンプチラシ 表面" class="flyer-pdf-frame"></iframe>
+                <iframe src="pdf/2026%20Summer%20Camp%20ura.pdf" title="サマーキャンプチラシ 裏面" class="flyer-pdf-frame"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="flyer-modal-overlay" id="flyerModalOverlay"></div>
+
+    <!-- ===== 海外留学 PDFモーダル ===== -->
+    <div class="flyer-modal" id="studyModal" role="dialog" aria-modal="true" aria-label="海外留学チラシ">
+        <div class="flyer-modal-inner">
+            <div class="flyer-modal-header flyer-modal-header--green">
+                <p class="flyer-modal-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 60" width="28" height="19" style="display:inline-block;vertical-align:middle;border-radius:2px;margin-right:6px;">
+                      <rect width="90" height="30" fill="#0038A8"/>
+                      <rect y="30" width="90" height="30" fill="#CE1126"/>
+                      <polygon points="0,0 45,30 0,60" fill="#FFFFFF"/>
+                      <circle cx="18" cy="30" r="7" fill="#FCD116"/>
+                      <g stroke="#FCD116" stroke-width="1.5">
+                        <line x1="18" y1="20" x2="18" y2="16"/><line x1="18" y1="40" x2="18" y2="44"/>
+                        <line x1="8" y1="30" x2="4" y2="30"/><line x1="28" y1="30" x2="32" y2="30"/>
+                        <line x1="11" y1="23" x2="8" y2="20"/><line x1="25" y1="37" x2="28" y2="40"/>
+                        <line x1="25" y1="23" x2="28" y2="20"/><line x1="11" y1="37" x2="8" y2="40"/>
+                      </g>
+                      <polygon points="4,5 5,8 8,8 5.5,10 6.5,13 4,11 1.5,13 2.5,10 0,8 3,8" fill="#FCD116"/>
+                      <polygon points="4,55 5,52 8,52 5.5,50 6.5,47 4,49 1.5,47 2.5,50 0,52 3,52" fill="#FCD116"/>
+                      <polygon points="38,30 39,33 42,33 39.5,35 40.5,38 38,36 35.5,38 36.5,35 34,33 37,33" fill="#FCD116"/>
+                    </svg>
+                    2026 短期海外留学プログラム
+                </p>
+                <div class="flyer-modal-actions">
+                    <a href="pdf/La%20Salle%20Exchange%20Student%20Program%20(8).pdf" target="_blank" rel="noopener noreferrer" class="flyer-btn flyer-btn-open">
+                        別タブで開く ↗
+                    </a>
+                    <a href="pdf/La%20Salle%20Exchange%20Student%20Program%20(8).pdf" download class="flyer-btn flyer-btn-dl">
+                        DL ↓
+                    </a>
+                    <button class="flyer-modal-close" data-target="studyModal" type="button" aria-label="閉じる">✕</button>
+                </div>
+            </div>
+            <div class="flyer-modal-body">
+                <iframe src="pdf/La%20Salle%20Exchange%20Student%20Program%20(8).pdf" title="海外留学プログラムチラシ" class="flyer-pdf-frame"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="flyer-modal-overlay" id="studyModalOverlay"></div>
 
     <!-- ===== メインコンテンツ ===== -->
     <main class="main-content">
@@ -128,7 +251,8 @@
             <p class="body-ja">
                 幼児から、グローバルに活躍するプロフェッショナルまで、一人ひとりに合わせた指導で、「わかる・話せる・使える」英語力を育てます。</p>
             <p class="body-ja">
-                Supporting learners from young children to globally active professionals, nurturing the ability to understand, speak and use English.
+                Supporting learners from young children to globally active professionals, nurturing the ability to
+                understand, speak and use English.
             </p>
             <p class="body-ja">詳しくは<a href="class.html">クラス案内</a>・<a href="center.html">センター案内</a>をご覧ください。</p>
             <!-- <p class="body-en">Located in Chikuzen-machi, Fukuoka, Bene English Center has been supporting English
