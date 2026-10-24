@@ -27,13 +27,13 @@
 
   <url>
     <loc>https://www.bene-english.com/study_tour.html</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.bene-english.com/english_camp.html</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <priority>0.7</priority>
   </url>
 
@@ -46,6 +46,18 @@
   <url>
     <loc>https://www.bene-english.com/access.html</loc>
     <lastmod>2026-06-20</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bene-english.com/summer2026.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bene-english.com/la_salle.html</loc>
+    <lastmod>2026-10-24</lastmod>
     <priority>0.6</priority>
   </url>
 
